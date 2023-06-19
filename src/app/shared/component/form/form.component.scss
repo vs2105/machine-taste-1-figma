@@ -1,0 +1,38 @@
+
+.header{
+	margin: 0px 114px 17px;
+}
+
+.container{
+	max-width: 900px;
+	width: 100%;
+	border-radius: 6px;
+	padding: 30px;
+	// margin: 8px 112px;
+	background-color: #fff;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+ .container form{
+ 	position: relative;
+	margin-top: 16px;
+	min-height: 490px;
+	background-color: #fff;
+}
+.error{
+    color: red;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.title{
+    // margin-right: 499px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+@media screen and (max-width:600px){
+	.header{
+		margin: 0px;
+	}
+
+	
+}

@@ -1,0 +1,105 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="main d-flex">
+        <div class="card form">
+            <div class="card-body">
+                <form class="log-in" *ngIf="ishavingaccount">
+          
+                    <div class="d-flex align-items-center mb-3 pb-1">
+                    </div>
+    
+                    <h1 class="fw-normal mb-3 pb-3 text-center" style="letter-spacing: 1px; text-transform: capitalize;">log into your account</h1>
+    
+                    <div class="form-outline example-form mb-4" >
+                      <!-- <input type="text"  #username class="form-control form-control-lg"/>
+                      <label class="form-label" for="username" >Username </label> -->
+                      <mat-form-field class="example-full-width">
+                        <mat-label>Username</mat-label>
+                        <input matInput placeholder="Username"  #username  >
+                         
+                      </mat-form-field>
+                    </div>
+    
+                    <div class="form-outline mb-4">
+                      <!-- <input type="password"   #password class="form-control form-control-lg"/>    
+                      <label class="form-label" for="password" >Password</label> -->
+                      <mat-form-field class="example-full-width">
+                        <mat-label>Password</mat-label>
+                        <input matInput placeholder="Password" [type]="inputtype" #password  >
+                        <mat-icon class="iconclick" matSuffix (click)="onvisible()">{{icon}}</mat-icon>
+                      </mat-form-field>
+                    </div>
+    
+                    <div class="pt-1 mb-4">
+                      <button mat-raised-button id='mybutton' type="button"   (click)="onLogin(username,password)">Login</button>
+                    </div>
+                  </form>
+    
+                  <form class="sign-up" *ngIf="!ishavingaccount">
+          
+                    <div class="d-flex align-items-center mb-3 pb-1">
+                     
+                      
+                    </div>
+    
+                    <h1 class=" mb-3 pb-3 text-center" style="letter-spacing: 1px; text-transform: capitalize;">sign up</h1>
+    
+                    <div class="form-outline mb-4">
+                      <!-- <input type="text" class="form-control form-control-lg" />
+                      <label class="form-label" for="username">Username </label> -->
+                      <mat-form-field class="example-full-width">
+                        <mat-label>Username</mat-label>
+                        <input matInput placeholder="Username" type="text" #password>
+                      </mat-form-field>
+                    </div>
+    
+                    <div class="form-outline mb-4">
+                      <!-- <input type="password"  class="form-control form-control-lg"  />
+                      <label class="form-label" for="password"> Password</label> -->
+                      <mat-form-field class="example-full-width">
+                        <mat-label>Password</mat-label>
+                        <input matInput placeholder="Password" type="password">
+                        <!-- <mat-icon class="iconclick" matSuffix (click)="onvisible()">{{icon}}</mat-icon> -->
+                      </mat-form-field>
+                    </div>
+    
+                    <div class="form-outline mb-4">
+                      <!-- <input type="password"  class="form-control form-control-lg"  />
+                      <label class="form-label" for="password"> Confirm Password</label> -->
+                      <mat-form-field class="example-full-width">
+                        <mat-label>Confirm Password</mat-label>
+                        <input matInput placeholder="Password" type="password" >
+                        <!-- <mat-icon class="iconclick" matSuffix (click)="onvisible()">{{icon}}</mat-icon> -->
+                      </mat-form-field>
+                    </div>
+    
+                    <div class="pt-1 mb-4">
+                      <!-- <button class="btn btn-dark btn-lg btn-block" type="button" style="background-color: #AAA3FF;">Create Account</button> -->
+                      <button mat-raised-button id='mybutton' type="button" >Create Account</button>
+                    </div>
+    
+    
+                
+    
+                  </form>
+    
+                  <p  style="color: #000;" *ngIf="ishavingaccount" >
+                    <a href="javascript:;" (click)="ishavingaccount = !ishavingaccount">Don't have an account? </a> 
+    
+                    <p  style="color: #393f81;" *ngIf="!ishavingaccount">
+                      <a href="javascript:;"  (click)="ishavingaccount = !ishavingaccount" >Already have an account? </a> 
+            </div>
+        </div>
+          
+                         
+    
+                        
+          
+          
+    </div>
+    </div>
+      
+  </div>
+</div>
+

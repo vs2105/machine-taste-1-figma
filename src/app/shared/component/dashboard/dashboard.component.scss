@@ -1,0 +1,205 @@
+.row{
+  margin-left: -3px;
+}
+// .col[_ngcontent-mot-c17], .col-1[_ngcontent-mot-c17], .col-10[_ngcontent-mot-c17], .col-11[_ngcontent-mot-c17], .col-12[_ngcontent-mot-c17], .col-2[_ngcontent-mot-c17], .col-3[_ngcontent-mot-c17], .col-4[_ngcontent-mot-c17], .col-5[_ngcontent-mot-c17], .col-6[_ngcontent-mot-c17], .col-7[_ngcontent-mot-c17], .col-8[_ngcontent-mot-c17], .col-9[_ngcontent-mot-c17], .col-auto[_ngcontent-mot-c17], .col-lg[_ngcontent-mot-c17], .col-lg-1[_ngcontent-mot-c17], .col-lg-10[_ngcontent-mot-c17], .col-lg-11[_ngcontent-mot-c17], .col-lg-12[_ngcontent-mot-c17], .col-lg-2[_ngcontent-mot-c17], .col-lg-3[_ngcontent-mot-c17], .col-lg-4[_ngcontent-mot-c17], .col-lg-5[_ngcontent-mot-c17], .col-lg-6[_ngcontent-mot-c17], .col-lg-7[_ngcontent-mot-c17], .col-lg-8[_ngcontent-mot-c17], .col-lg-9[_ngcontent-mot-c17], .col-lg-auto[_ngcontent-mot-c17], .col-md[_ngcontent-mot-c17], .col-md-1[_ngcontent-mot-c17], .col-md-10[_ngcontent-mot-c17], .col-md-11[_ngcontent-mot-c17], .col-md-12[_ngcontent-mot-c17], .col-md-2[_ngcontent-mot-c17], .col-md-3[_ngcontent-mot-c17], .col-md-4[_ngcontent-mot-c17], .col-md-5[_ngcontent-mot-c17], .col-md-6[_ngcontent-mot-c17], .col-md-7[_ngcontent-mot-c17], .col-md-8[_ngcontent-mot-c17], .col-md-9[_ngcontent-mot-c17], .col-md-auto[_ngcontent-mot-c17], .col-sm[_ngcontent-mot-c17], .col-sm-1[_ngcontent-mot-c17], .col-sm-10[_ngcontent-mot-c17], .col-sm-11[_ngcontent-mot-c17], .col-sm-12[_ngcontent-mot-c17], .col-sm-2[_ngcontent-mot-c17], .col-sm-3[_ngcontent-mot-c17], .col-sm-4[_ngcontent-mot-c17], .col-sm-5[_ngcontent-mot-c17], .col-sm-6[_ngcontent-mot-c17], .col-sm-7[_ngcontent-mot-c17], .col-sm-8[_ngcontent-mot-c17], .col-sm-9[_ngcontent-mot-c17], .col-sm-auto[_ngcontent-mot-c17], .col-xl[_ngcontent-mot-c17], .col-xl-1[_ngcontent-mot-c17], .col-xl-10[_ngcontent-mot-c17], .col-xl-11[_ngcontent-mot-c17], .col-xl-12[_ngcontent-mot-c17], .col-xl-2[_ngcontent-mot-c17], .col-xl-3[_ngcontent-mot-c17], .col-xl-4[_ngcontent-mot-c17], .col-xl-5[_ngcontent-mot-c17], .col-xl-6[_ngcontent-mot-c17], .col-xl-7[_ngcontent-mot-c17], .col-xl-8[_ngcontent-mot-c17], .col-xl-9[_ngcontent-mot-c17], .col-xl-auto[_ngcontent-mot-c17] {
+//     position: relative;
+//     width: 100%;
+//     padding-right: 16px;
+//     padding-left: 0px;
+// }
+
+  .cardm{
+     background-color: #fff;
+     border-radius: 25px;
+    box-shadow: -6px 6px 15px 0px #00000040;
+  }
+  
+ .cardm:hover{
+  background-image: linear-gradient(to left,rgb(255, 223, 107),rgb(255, 234, 113));
+ }
+
+  .percent{
+    height: 97.5px;
+    width: 90.5px;
+    border-radius: 31px;
+    border: 1.5px solid black;
+    
+   display: flex;
+   align-items: center;
+   justify-content: center;
+  }
+  .bg{
+    color: #5252B0;
+    margin-right: 3px;
+  }
+
+  .progress-bar{
+    background-color: #5252B0;
+  }
+  
+  
+  // second section card css
+  
+  .card-color{
+    background-color: #fff;
+    height: 242px;
+  width: 340px;
+  left: 0px;
+  top: 0px;
+  border-radius: 15px;
+   box-shadow: -6px 6px 15px 0px #00000040;
+  }
+  // .card-color .product{
+  //   padding: 24px 20px 10px 10px;
+  //   Font-size: 24px;
+  //   Line-height: 29px;
+  //   Line-height: 100%;
+  //   color:#121212;
+  //   margin-top: 25px;
+  // }
+  
+  // li .val{
+  //   display: inline;
+  //   margin-left: 151px;
+  //   Font-size: 14px;
+  //   line-height: 15px;
+  //   font-weight: 500;
+  // }
+  
+  // loan css start 
+  
+  
+
+  
+  .loansection{
+
+    border-radius: 15px;
+    position: relative;
+  }
+
+   .vectorimg{
+    position: absolute;
+    top: 0;
+    right:0
+   }
+   
+  .icons{
+    height: 236px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    background-color: #AAA3ff;
+  }
+
+  .br {
+    border-radius:16px 0 0 16px;
+  }
+   
+  .bl{
+    border-radius: 0 16px 16px 0;
+  }
+  
+  .loan-border{
+    border-right: 2px solid #fff;
+    height: 235px;
+  }
+ .img1{
+  background-image: url(../../../../assets/images/Vector.png);
+  background-repeat: no-repeat;
+  object-fit: cover;
+ }
+  
+  
+  
+  
+  
+  
+  .para1{
+    text-align: center;
+    color: #fff;
+    Font-style: Medium;
+  Font-size: 20px;
+  Line-height: 21px;
+  margin-top: 72px;
+  }
+  
+  .row1 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -76px;
+    margin-left: 8px;
+  }
+  
+  .lastimg{
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  .centerd{
+    // position: absolute;
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%, -50%)
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  //section 3 lorem ipsum start here
+  
+  .section3{
+  border-radius: 20px;
+  border: solid 1px #fff;
+  margin-top: 30px;
+  background-color: #fff;
+  padding: 40px;
+    // img{
+    //   width: 100%;
+    // }
+  }
+  
+  img1{
+    width: 160px;
+    height: 100%;
+    top:400px
+  }
+  
+  .lorem{
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 38px;
+  letter-spacing: 0em;
+  }
+  
+  .frame{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  }
+  .text{
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+  }
+  .col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 0px;
+  }
+  
+  
+  @media screen and (max-width:600px){
+
+    .vectorimg{
+      top: 508px;
+      right:0
+     }
+     .icons{
+      border-radius: 16px;
+     }
+  }

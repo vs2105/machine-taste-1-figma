@@ -1,0 +1,67 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+        <div class="items d-flex justify-content-between ">
+            <!-- <h3>Table <span class="text">Click Here For Empty Table</span></h3> -->
+           <div class="item1"><h2>Table</h2></div>
+           <div class="item2"><h2>Click Here For Empty Table</h2></div>
+           <div class="item3">
+            <!-- <p class="search" (click)="onclick($event)" >Search</p> -->
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass icons" ></i>
+                <label for="inputPassword2" class="sr-only">Search</label>
+                <input type="text" (keyup)="onclick($event)" class="form-control"  placeholder="Search">
+                 
+            </div>
+           </div>
+            
+        </div>
+   
+            <div class="table table-responsive-sm">
+                <table class="mb-0" mat-table [dataSource]="dataSource">
+              
+                  <!-- Position Column -->
+                  <ng-container matColumnDef="TransactionCode">
+                    <th mat-header-cell *matHeaderCellDef> Transaction Code </th>
+                    <td mat-cell *matCellDef="let element"> {{element.TransactionCode}} </td>
+                  </ng-container>
+              
+                  <!-- Name Column -->
+                  <ng-container matColumnDef="Name">
+                    <th mat-header-cell *matHeaderCellDef> Name </th>
+                    <td mat-cell *matCellDef="let element"> {{element.Name}} </td>
+                  </ng-container>
+              
+                  <!-- Weight Column -->
+                  <ng-container matColumnDef="InvestAmount">
+                    <th mat-header-cell *matHeaderCellDef> Invest Amount </th>
+                    <td mat-cell *matCellDef="let element"> {{element.InvestAmount}} </td>
+                  </ng-container>
+              
+                  <!-- Symbol Column -->
+                  <!-- <ng-container matColumnDef="InvestRate">
+                    <th mat-header-cell *matHeaderCellDef> InvestRate </th>
+                    <td mat-cell *matCellDef="let element"> {{element.InvestRate}} </td>
+                  </ng-container> -->
+    
+                  <ng-container matColumnDef="Option">
+                    <th mat-header-cell *matHeaderCellDef> Option </th>
+                    <td mat-cell *matCellDef="let element"> <button mat-raised-button > <i class="fa-solid fa-eye mr-2"></i>{{element.Option}}</button> </td>
+                  </ng-container>
+              
+                  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+                </table>
+              
+                <!-- < #paginator1   [pageSizeOptions]="[5, 10, 20 ]">
+                <> -->
+                <mat-paginator #paginator1 [pageSize]="10" 
+        [pageSizeOptions]="[2,5, 10, 25, 200]">
+        </mat-paginator>
+              </div>
+    </div>
+        
+            
+       
+</div>
+</div>

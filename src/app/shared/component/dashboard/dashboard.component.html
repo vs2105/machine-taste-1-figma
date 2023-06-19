@@ -1,0 +1,192 @@
+<!-- <div class="row">
+    <div class="col-md-4">
+        <div class="card card1">
+            <div class="d-flex justify-content-between">
+                <div class="d-flex flex-row align-items-center">
+                    <div>
+                        <p>
+                            Overall <br> Progress
+                        </p>
+                    </div>
+                    <div>
+                        <span class="para">120%</span>
+                    </div>
+                </div>
+            </div>
+            <ul style="margin-top:30px;">
+                <li><i class="fa-solid fa-circle"></i> In-Progress
+                    <p class="para value">30%</p>
+                </li>
+            </ul>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 54%;" aria-valuenow="32" aria-valuemin="0"
+                    aria-valuemax="100"><i class="fa-solid fa-circle" style="font-size: 8px; margin-left: 2px;"></i>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
+<section class="section1">
+    <h2> User Overview</h2>
+    <div class="row">
+        <div class="col-md-4 " *ngFor="let user of useroverview">
+            <div class="card cardm mb-3">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-6 pl-2">
+                            <h1>
+                                {{user.UserHeading }}
+                            </h1>
+                        </div>
+                        <div class="col-5 d-flex justify-content-center align-items-center">
+                            <h2 class="percent">
+                                {{user.percent}}
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                       <div class="col-sm-11">
+                         <div class="progress1 d-flex justify-content-between">
+                              <p> <i class="fa-solid fa-circle bg"></i>{{user.status}}</p>
+                             <p class="mr-6">34%</p>
+                         </div>
+                       </div>
+                    </div>
+                    <div class="row">
+                       <div class="col-sm-11">
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 34%;" aria-valuenow="34" aria-valuemin="0" aria-valuemax="100">34%</div>
+                          </div>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</section>
+
+
+
+
+<!-- loan section2 start here -->
+
+<section class="loan p-0">
+    <h2>Loan</h2>
+    <div class="loansection">
+        <div class="row m-0">
+            <div class="col-sm-4 md mb-3  p-0 loan-border">
+                <div class="icons br img1 mb-3">
+                    <img src="../../../../assets/images/coin.png" alt="">
+                    <p>sme loans</p>
+                </div>
+            </div>
+
+            <div class="col-sm-4  mb-3 p-0 loan-border">
+                <div class="icons">             
+                    <img  src="../../../../assets/images/receipt-minus.png" alt="">
+                    <p class="mb-0">Local purchase </p>
+                    <p>order</p>
+                    <button class="btn btn-light" >Apply</button>
+                </div>
+            </div>
+
+            <div class="col-sm-4 mb-2 p-0">
+                <div class="icons bl">
+                    <img src="../../../../assets/images/archive-book.png" alt="">
+                        <p>Invoices</p>
+                       
+                </div>
+            </div>
+            <img  src="../../../../assets/images/Vector (1).png" alt="" class="img-fluid vectorimg">
+        </div>
+    </div>
+
+</section>
+
+
+
+<!-- lorem section3 start here -->
+
+<section class="section3 mb-5">
+
+    <div class="row">
+        <div class="col-md-3 mb-3">
+            <img src="../../../../assets/images/Frame2.jpg" alt="" class="w-100">
+        </div>
+        <div class="col-md-9">
+            <div class="ml-4 lorem">
+                <h2 class="mb-2">Lorem ipsum dolor</h2>
+                <p> Lorem ipsum dolor sit amet consectetur.
+                    Dictumst quis in dui fringilla id cras montes laoreet eget. Tristique justo cursus tortor arcu.
+                    Aliquam vivamus tempus nam in phasellus tristique eleifend. Morbi lobortis mattis et sit lectus
+                    placerat quisque. Urna viverra sagittis at mauris. At at risus amet consectetur </p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row mt-4 mr-2 flex-row-reverse">
+
+        <div class="col-md-3 pr-0 mb-3">
+            <img src="../../../../assets/images/Frame2.jpg" alt="" class=" w-100">
+        </div>
+        <div class="col-md-9">
+
+
+            <div class="ml-1 lorem">
+                <h2 class="mb-2">Lorem ipsum dolor</h2>
+                <p> Lorem ipsum dolor sit amet consectetur.
+                    Dictumst quis in dui fringilla id cras montes <br> laoreet eget. Tristique justo cursus tortor
+                    arcu.
+                    Aliquam vivamus tempus nam in phasellus tristique eleifend. Morbi lobortis mattis et sit lectus
+                    placerat quisque. Urna viverra sagittis at mauris. At at risus amet consectetur </p>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="row mt-4">
+        <div class="col-md-3 mb-4 mb-md-0">
+            <div class="img1">
+                <img class="frame" src="../../../../assets/images/Frame2.jpg" alt="">
+            </div>
+            <div class="text text-white">
+                <h5>Lorem ipsum dolor</h5>
+                <p>Lorem ipsum dolor sit amet consectetur</p>
+            </div>
+        </div>
+        <div class="col-md-3 mb-4 mb-md-0">
+            <div class="img1">
+                <img class="frame" src="../../../../assets/images/Frame2.jpg" alt="">
+            </div>
+            <div class="text text-white">
+                <h5>Lorem ipsum dolor</h5>
+                <p>Lorem ipsum dolor sit amet consectetur</p>
+            </div>
+        </div>
+        <div class="col-md-3 mb-4 mb-md-0">
+            <div class="img1">
+                <img class="frame" src="../../../../assets/images/Frame2.jpg" alt="">
+            </div>
+            <div class="text text-white">
+                <h5>Lorem ipsum dolor</h5>
+                <p>Lorem ipsum dolor sit amet consectetur</p>
+            </div>
+        </div>
+        <div class="col-md-3 mb-4 mb-md-0">
+            <div class="img1">
+                <img class="frame" src="../../../../assets/images/Frame2.jpg" alt="">
+            </div>
+            <div class="text text-white">
+                <h5>Lorem ipsum dolor</h5>
+                <p>Lorem ipsum dolor sit amet consectetur</p>
+            </div>
+        </div>
+    </div>
+
+
+
+</section>

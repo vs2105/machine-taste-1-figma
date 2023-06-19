@@ -1,0 +1,51 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark p-3">
+      <div class="container-fluid">
+        <a class="navbar-brand text-uppercase"  routerLink="">Logo Icon</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          
+          <ul class="navbar-nav ml-auto" >
+            <li class="nav-item"  routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" appDropdown>
+              <a class="nav-link" routerLink="/home">Dashboard <span class="sr-only">(current)</span></a>
+            </li>
+            
+            <li class="nav-item dropdown"  routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" >
+              <a class="nav-link dropdown-toggle"  id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"   appToggletableandform>
+                User
+              </a>
+              <!-- <div class="dropdown-menu show" aria-labelledby="navbarDropdown" >
+                <a class="dropdown-item" routerLink="table">User Table</a>
+                <a class="dropdown-item"routerLink="form">Create User</a>
+                <div class="dropdown-divider"></div>
+              </div> -->
+              <ul class="dropdown-menu" appShelftoogrle > 
+                <li>
+                    <a class="dropdown-item" routerLinkActive="active"  routerLink="/table">User Table</a>
+                </li>
+                <li>
+                    <a class="dropdown-item" routerLinkActive="active" routerLink="/form">Create User</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item"  routerLinkActive="active"  [routerLinkActiveOptions]="{exact:true}" appDropdown2>
+              <a class="nav-link" routerLink="chart" >Chart <span class="sr-only">(current)</span></a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#"><img src='../../../../assets/images/Vector (2).png' alt=""></a>
+            </li> -->
+          </ul>
+           
+          <form class="form-inline my-2 my-lg-0">  
+            <button mat-raised-button color="warn" (click)="onlogout()">Logout</button>
+          </form>
+          
+        </div>
+      </div>
+
+  </nav>
+
+ 
+ 

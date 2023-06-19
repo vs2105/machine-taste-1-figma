@@ -1,0 +1,79 @@
+<div class="container mb-4">
+    <div class="row">
+        <div class="col-md-8 pl-0">
+            <h2>Charts</h2>
+            <div class="main">
+                <h2 style="margin:0 0 0 23px;">Total Users Joined</h2>
+                <canvas height="250px" width="680px" style="padding: 15px;" baseChart [data]="barChartData"
+                    [options]="barChartOptions" [plugins]="barChartPlugins" [legend]="barChartLegend" [type]="'bar'">
+                </canvas>
+            </div>
+            <div class="demography">
+                <h2 class="heading">Demography</h2>
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class=" d-flex justify-content-between align-items-center">
+                            <h3 class="mr-3">Bihar</h3>
+                            <div class="progress-bar">
+
+                            </div>
+                            <h3 class="ml-2">59%</h3>
+                        </div>
+                        <div class=" d-flex align-items-center">
+                            <h3 class="mr-3">Delhi</h3>
+                            <div class="progress-bar2">
+
+                            </div>
+                            <h3 class="ml-1">31%</h3>
+                        </div>
+                        <div class="city1 d-flex align-items-center ">
+                            <h3 class="mr-4">UP</h3>
+                            <div class="progress-bar3">
+
+                            </div>
+                            <h3 class="ml-1">10%</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4 mt-5 user">
+                <div class="usercount">
+                    <div class="card-content mb-6">
+                        <h3 class="number">354</h3>
+                        <p class="text">Total Users Count</p>
+                    </div>
+                    <div class="newuser">
+                        <div class="row">
+                            <div class="col-sm-6 br">
+                                <h3 class="mb-0 new">20</h3>
+                                <p class="text1">New Users</p>
+                            </div>
+                            <div class="col-sm-6 ">
+                                <h3 class="mb-0 new">05</h3>
+                                <p class="text1"> Users Left</p>
+                            </div>
+                        </div>
+                        
+
+                    </div>
+                </div>
+                <div class="social mt-3">
+                    <h2 class="socialheading">Social Category</h2>
+                    <canvas  style="margin-top: 4px;" baseChart width="290" height="250"  [type]="'pie'" [datasets]="pieChartDatasets" [labels]="pieChartLabels"
+                        [options]="pieChartOptions" [plugins]="pieChartPlugins" [legend]="pieChartLegend">
+                    </canvas>
+                   
+                    
+                           
+                         
+                    
+                </div>
+
+               
+
+            </div>
+        </div>
+    </div> 
+</div>

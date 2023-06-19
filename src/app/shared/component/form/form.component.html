@@ -1,0 +1,144 @@
+<h2 class="header">Create New User</h2>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+
+
+            <form class="mb-4" [formGroup]="signupform" (ngSubmit)="onsignup()">
+                <div class="form first">
+                    <div class="details personal d-flex justify-content-between">
+                        <h3 class="title">Personal Details</h3>
+                        <h3><span class="error">*</span>Marked fields are necessary</h3>
+                    </div>
+                    <hr style="margin-top: 6px;">
+                    <div class="form-row mb-3" style="border-radius: 4.47531px;;">
+                        <div class="form-group col-md-4 mr-3">
+                            <label for="fname">First Name <span class="error">*</span></label>
+                            <input type="text" formControlName="fname" class="form-control">
+                            <ng-container *ngIf="getusernamecontrol.invalid && getusernamecontrol.touched">
+                                <p class="error" *ngIf=" getusernamecontrol.hasError('required')">
+                                    FirstName is Mandatory
+                                </p>
+                            </ng-container>
+                            <ng-container *ngIf="getusernamecontrol.invalid && getusernamecontrol.dirty">
+                                <p class="error" *ngIf="getusernamecontrol.hasError('maxlength')">
+                                    max-length should be {{getusernamecontrol.errors?.['maxlength'].requiredLength}}
+                                    <!-- & actual length is {{getusernamecontrol.errors?.['maxlength'].actualLength}} -->
+                                </p>
+                                <p class="error" *ngIf="getusernamecontrol.hasError('minlength')">
+                                    min-length should be {{getusernamecontrol.errors?.['minlength'].requiredLength}}
+                                </p>
+                                <p class="error" *ngIf="getusernamecontrol.hasError('pattern')">
+                                    Name can only contain alphabets
+                                </p>
+                            </ng-container>
+                            <!-- <ng-container *ngIf="getusernamecontrol.invalid  && getusernamecontrol.dirty">
+                                
+                            </ng-container> -->
+                        </div>
+                        <div class="form-group col-md-4 mr-3">
+                            <label for="lname">Last Name <span class="error">*</span></label>
+                            <input type="text" formControlName="lname" class="form-control">
+                             <ng-container *ngIf="getallcontrol['lname'].invalid && getallcontrol['lname'].touched">
+                                <p class="error" >
+                                    last Name is Mandatory
+                                </p>
+                             </ng-container>
+                             <!-- <ng-container *ngIf="getallcontrol['lname'].invalid && getallcontrol['lname'].dirty">
+                                <p>max length should be {{getallcontrol['lname'].errors?.['maxlength'].requiredLength}}</p>
+                             </ng-container> -->
+                             <ng-container *ngIf="getallcontrol['lname'].invalid  && getallcontrol['lname'].dirty" >
+                                <p class="error" *ngIf="getallcontrol['lname'].hasError('pattern')">
+                                    Name can only contain alphabets
+                                </p>
+                                <p class="error">max length should be {{getallcontrol['lname'].errors?.['maxlength'].requiredLength}}</p>
+                            </ng-container>
+                        </div>
+
+
+                    </div>
+
+                    <div class="form-row mb-3" style="border-radius: 4.47531px;;">
+                        <div class="form-group col-md-4 mr-3">
+                            <label for="gender">Gender <span class="error">*</span></label>
+                            <select type="text" class="form-control" 
+                                placeholder="Select Gender">
+                                <option value="">Select Gender</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                            </select>
+
+                        </div>
+                        <div class="form-group col-md-4 mr-3">
+                            <label for="DOB">Date Of Birth <span class="error">*</span></label>
+                            <input class="form-control" type="date" formControlName="DOB">
+                            <ng-container *ngIf="getallcontrol['DOB'].invalid && getallcontrol['DOB'].touched">
+                                <p class="error">
+                                  Date Of Birth is Mandatory
+                                </p>
+                            </ng-container>
+                        </div>
+                    </div>
+
+                    <div class="form-row" style="border-radius: 4.47531px;;">
+                        <div class="form-group col-md-4 mr-3">
+                            <label for="email">Email<span class="error">*</span></label>
+                            <input type="email" class="form-control" formControlName="email">
+                            <ng-container *ngIf="getallcontrol['email'].invalid && getallcontrol['email'].touched">
+                                <p class="error" *ngIf="getallcontrol['email'].hasError('required')">
+                                    Email is required field
+                                </p>
+                            </ng-container>
+                            <ng-container *ngIf="getallcontrol['email'].invalid && getallcontrol['email'].touched && getallcontrol['email'].dirty">
+                                <p class="error" *ngIf="getallcontrol['email'].hasError('pattern')">
+                                    Enter valid email id
+                                </p>
+                            </ng-container>
+                        </div>
+                        <div class="form-group col-md-4 mr-3">
+                            <label for="number">Phone Number<span class="error">*</span></label>
+                            <input type="number" class="form-control" formControlName="number">
+                            <ng-container *ngIf="getallcontrol['number'].invalid && getallcontrol['number'].touched">
+                                <p class="error" *ngIf="getallcontrol['number'].hasError('required')">
+                                    Number is required field
+                                </p>
+                            </ng-container>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="mt-4 title">Create Password</h3>
+                <hr>
+                <div class="form-row" style="border-radius: 4.47531px;">
+                    <div class="form-group col-md-4 mr-3">
+                        <label for="password">Password<span class="error">*</span></label>
+                        <input type="password" class="form-control" formControlName="password">
+                        <ng-container *ngIf="getallcontrol['password'].invalid && getallcontrol['password'].touched" >
+                          <p class="error" *ngIf="getallcontrol['password'].hasError('required')">
+                             Password is Mandatory field
+                          </p>
+                          <p class="error" *ngIf="getallcontrol['password'].hasError('pattern') && getallcontrol['password'].dirty">
+                            Must contain at least 1 lowercase alphabetical character, 1 uppercase alphabetical character, 1 special character, 1 numerical character and at least 8 characters long
+                          </p>
+                        </ng-container>
+                    </div>
+                    <div class="form-group col-md-4 mr-3">
+                        <label for="conformpassword">Re-Enter Password<span class="error">*</span></label>
+                        <input type="password" class="form-control" formControlName="conformpassword">
+                        <ng-container *ngIf="getallcontrol['conformpassword'].dirty">
+                            <p class="error" *ngIf="getallcontrol['conformpassword'].value != getallcontrol['password'].value">
+                               password & confirm-password should be same
+                            </p>
+                        </ng-container>
+                    </div>
+
+                </div>
+                <button class="mt-4 btn-sm" mat-raised-button color="primary" type="submit"
+                [disabled]="signupform.invalid || (getallcontrol['conformpassword'].value != getallcontrol['password'].value)"
+                >create</button>
+            </form>
+
+        </div>
+    </div> 
+  
+<!-- </div>  [disabled]="signupform.invalid || getallcontrol['conformpassword'].value != getallcontrol['password'].value" -->
